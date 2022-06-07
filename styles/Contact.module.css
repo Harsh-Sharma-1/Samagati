@@ -1,0 +1,31 @@
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 100%;
+}
+
+.left h1 {
+    color: #173b82;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.left h3 {
+    color: #173b82;
+    font-weight: 300;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.right {
+    width: 100%;
+}
