@@ -5,10 +5,14 @@
     box-sizing: border-box;
     margin-top: 30px;
     border-radius: 10px;
-    box-shadow: inset 10px 10px 10px #cbced1, inset -6px -6px 6px white;
+    box-shadow: inset 10px 10px 10px #cbced19e, inset -6px -6px 6px white;
     border: none;
     resize: none;
     font-size: 18px;
+}
+
+.textareabox::placeholder {
+    color: #173b8286;
 }
 
 .textareabox:focus {

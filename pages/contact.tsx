@@ -3,12 +3,13 @@ import type { NextPage } from 'next';
 import Navbar from '../components/Layout/Navbar';
 import styles from '../styles/Contact.module.css';
 import TextAreaBox from '../components/UI/TextAreaBox';
+import NueButton from '../components/UI/NueButton';
+import FloatingBtn from '../components/UI/Floatingbtn';
 
 const Contact: NextPage = () => {
     const [question, setQuestion] = useState<string>('');
-    console.log(question);
     return (
-        <>
+        <div className={styles.pageContainer}>
             <Navbar />
             <div className={styles.container}>
                 <div className={styles.left}>
@@ -18,12 +19,21 @@ const Contact: NextPage = () => {
                         placeholder='Enter question here...'
                         onChange={setQuestion}
                     />
+                    <NueButton />
                 </div>
                 <div className={styles.right}>
-                    <h1>Hello</h1>
+                    <h1>Samagati Office</h1>
+                    <p>
+                        Avantika University, Vishwanathpuram, Lekoda, Madhya
+                        Pradesh 456006
+                    </p>
+
+                    <h2>avantika.samagati@avantika.edu.in</h2>
+                    <p>9588043164, 8805388985, 6265987173</p>
                 </div>
             </div>
-        </>
+            <FloatingBtn />
+        </div>
     );
 };
 
