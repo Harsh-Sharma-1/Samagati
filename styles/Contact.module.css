@@ -36,6 +36,12 @@
     font-size: 35px;
 }
 
+.iconContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
 .right {
     width: 100%;
 }

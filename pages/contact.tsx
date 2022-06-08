@@ -5,6 +5,13 @@ import styles from '../styles/Contact.module.css';
 import TextAreaBox from '../components/UI/TextAreaBox';
 import NueButton from '../components/UI/NueButton';
 import FloatingBtn from '../components/UI/Floatingbtn';
+import {
+    AiOutlineInstagram,
+    AiFillLinkedin,
+    AiOutlineMail,
+} from 'react-icons/ai';
+import { FiTwitter } from 'react-icons/fi';
+import SocialMediaBtn from '../components/UI/SocialMediaBtn';
 
 const Contact: NextPage = () => {
     const [question, setQuestion] = useState<string>('');
@@ -20,6 +27,12 @@ const Contact: NextPage = () => {
                         onChange={setQuestion}
                     />
                     <NueButton />
+                    <div className={styles.iconContainer}>
+                        <SocialMediaBtn icon={AiOutlineInstagram} />
+                        <SocialMediaBtn icon={AiFillLinkedin} />
+                        <SocialMediaBtn icon={AiOutlineMail} />
+                        <SocialMediaBtn icon={FiTwitter} />
+                    </div>
                 </div>
                 <div className={styles.right}>
                     <h1>Samagati Office</h1>
