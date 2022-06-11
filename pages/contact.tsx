@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import type { NextPage } from 'next';
-import Navbar from '../components/Layout/Navbar';
 import styles from '../styles/Contact.module.css';
 import TextAreaBox from '../components/UI/TextAreaBox';
 import NueButton from '../components/UI/NueButton';
@@ -17,7 +16,6 @@ const Contact: NextPage = () => {
     const [question, setQuestion] = useState<string>('');
     return (
         <div className={styles.pageContainer}>
-            <Navbar />
             <div className={styles.container}>
                 <div className={styles.left}>
                     <h1>Start talking!</h1>

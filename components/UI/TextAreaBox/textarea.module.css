@@ -1,5 +1,5 @@
 .textareabox {
-    width: 70%;
+    width: 80%;
     height: 170px;
     padding: 30px;
     box-sizing: border-box;
@@ -17,4 +17,10 @@
 
 .textareabox:focus {
     outline: none;
+}
+
+@media only screen and (max-width: 850px) {
+    .textareabox {
+        width: 90%;
+    }
 }

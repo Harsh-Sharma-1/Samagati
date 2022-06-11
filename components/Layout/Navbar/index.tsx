@@ -21,19 +21,35 @@ const Navbar = () => {
             />
             <ul className={styles.NavList}>
                 <li>
-                    <NavBtn Icon={AiOutlineHome} Label='Home' />
+                    <NavBtn Icon={AiOutlineHome} Label='Home' page_link='/' />
                 </li>
                 <li>
-                    <NavBtn Icon={AiOutlineInfo} Label='About us' />
+                    <NavBtn
+                        Icon={AiOutlineInfo}
+                        Label='About us'
+                        page_link='/about-us'
+                    />
                 </li>
                 <li>
-                    <NavBtn Icon={AiOutlineTeam} Label='our team' />
+                    <NavBtn
+                        Icon={AiOutlineTeam}
+                        Label='our team'
+                        page_link='/team'
+                    />
                 </li>
                 <li>
-                    <NavBtn Icon={AiOutlineCompass} Label='Tours' />
+                    <NavBtn
+                        Icon={AiOutlineCompass}
+                        Label='Tours'
+                        page_link='/tours'
+                    />
                 </li>
                 <li>
-                    <NavBtn Icon={AiOutlinePhone} Label='Phone' />
+                    <NavBtn
+                        Icon={AiOutlinePhone}
+                        Label='Phone'
+                        page_link='/contact'
+                    />
                 </li>
             </ul>
         </div>
