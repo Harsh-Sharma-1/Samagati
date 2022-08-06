@@ -4,7 +4,7 @@ import styles from "../styles/Contact.module.css";
 import TextAreaBox from "../components/UI/TextAreaBox";
 import NueButton from "../components/UI/NueButton";
 import FloatingBtn from "../components/UI/Floatingbtn";
-import EmailInput from "../components/UI/EmailInput";
+import Input from "../components/UI/Input/";
 import emailjs from "@emailjs/browser";
 
 import {
@@ -12,6 +12,7 @@ import {
   AiFillLinkedin,
   AiOutlineMail,
 } from "react-icons/ai";
+
 import { FiTwitter } from "react-icons/fi";
 import SocialMediaBtn from "../components/UI/SocialMediaBtn";
 
@@ -36,21 +37,23 @@ const Contact: NextPage = () => {
 
   const [question, setQuestion] = useState<string>("");
   const [email, setEmail] = useState<string>("");
+
   return (
     <div className={styles.pageContainer}>
       <div className={styles.container}>
         <div className={styles.left}>
           <h1>Start talking!</h1>
           <h3>Ask your questions</h3>
-          <EmailInput
+          <Input
             placeholder="Enter your email address"
             onChange={setEmail}
+            type="email"
           />
           <TextAreaBox
             placeholder="Enter question here..."
             onChange={setQuestion}
           />
-          <NueButton />
+          <NueButton name="Send" />
           <div className={styles.iconContainer}>
             <SocialMediaBtn icon={AiOutlineInstagram} />
             <SocialMediaBtn icon={AiFillLinkedin} />
