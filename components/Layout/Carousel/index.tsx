@@ -3,6 +3,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import image from "../../../public/assets/vacation.jpg";
 
 const Carousel = () => {
   const settings = {
@@ -16,12 +17,7 @@ const Carousel = () => {
     <div>
       <Slider {...settings}>
         <div>
-          <Image
-            src="/public/assets/vacation.jpg"
-            alt="k"
-            height={300}
-            width={750}
-          />
+          <Image src={image} alt="k" height={300} width={750} />
         </div>
         <div>
           <Image
