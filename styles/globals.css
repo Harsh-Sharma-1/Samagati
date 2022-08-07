@@ -71,7 +71,6 @@ a {
 }
 
 :root {
-  --primary-col: #173b82;
+  --primary-color: #173b82;
   --white: #ffffff;
-  --hover-col: #2458c0;
 }
