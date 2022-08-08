@@ -29,7 +29,11 @@ const Navbar = () => {
           <NavBtn Icon={AiOutlineCompass} Label="Tours" page_link="/tours" />
         </li>
         <li>
-          <NavBtn Icon={TbPlaneDeparture} Label="Booking" page_link="/book" />
+          <NavBtn
+            Icon={TbPlaneDeparture}
+            Label="Booking"
+            page_link="/booking"
+          />
         </li>
         <li>
           <NavBtn Icon={AiOutlinePhone} Label="Phone" page_link="/contact" />
