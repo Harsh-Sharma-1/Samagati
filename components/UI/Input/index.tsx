@@ -1,14 +1,15 @@
 import React from "react";
-import styles from "./emailInput.module.css";
+import styles from "./Input.module.css";
 type props = {
   placeholder: string;
   onChange: any;
+  type: string;
 };
 
-const EmailInput: React.FC<props> = ({ placeholder, onChange }: props) => {
+const Input: React.FC<props> = ({ type, placeholder, onChange }: props) => {
   return (
     <input
-      type="email"
+      type={type}
       className={styles.EmailInput}
       placeholder={placeholder}
       onChange={(a) => onChange(a.target.value)}
@@ -16,4 +17,4 @@ const EmailInput: React.FC<props> = ({ placeholder, onChange }: props) => {
   );
 };
 
-export default EmailInput;
+export default Input;
