@@ -1,0 +1,21 @@
+.container {
+    flex: 1;
+    height: 80vh;
+    overflow: scroll;
+    background: linear-gradient(
+            135.37deg,
+            rgba(0, 0, 0, 0.4) 4.29%,
+            rgba(255, 255, 255, 0.4) 95.6%
+        ),
+        #fdfdfd;
+    background-blend-mode: soft-light, normal;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: inset -9px -9px 16px #fafbff,
+        inset 5px 5px 16px rgba(166, 171, 189, 0.39);
+    border-radius: 10px;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}

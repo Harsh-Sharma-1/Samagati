@@ -17,6 +17,7 @@ const Login: NextPage = () => {
                 <div className={styles.leftContent}>
                     <h1>Welcome To Samagati</h1>
                     <h3>Login to your Samagati account</h3>
+                    
                     <Input placeholder='Username' onChange='' type='text' />
                     <Input placeholder='Password' onChange='' type='password' />
                     <div className={styles.logPassword}>
