@@ -5,8 +5,18 @@ import styles from './styles.module.scss';
 
 const TeamForm = () => {
     const [form, setForm] = useState(false);
+    let heightStyle = form
+        ? {
+              minHeight: '100vh',
+          }
+        : {};
     return (
-        <div className={styles.formContainer}>
+        <div
+            className={styles.formContainer}
+            style={{
+                ...heightStyle,
+            }}
+        >
             <div className={styles.textContainer}>
                 <h1>Join Samagati now!</h1>
                 <p>

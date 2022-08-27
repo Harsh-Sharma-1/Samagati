@@ -26,6 +26,19 @@
         border-top-left-radius: 32px;
         border-bottom-left-radius: 32px;
     }
+
+    position: relative;
+
+    div {
+        position: absolute;
+        top: 1%;
+        bottom: 1%;
+        left: 0px;
+        right: 0px;
+        border-top-left-radius: 32px;
+        border-bottom-left-radius: 32px;
+        background-color: rgba(0, 0, 0, 0.243);
+    }
 }
 
 .right {

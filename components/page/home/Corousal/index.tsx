@@ -31,7 +31,7 @@ const Corousal: React.FC<any> = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 5,
+        slidesToScroll: 1,
         arrows: true,
     };
     return (
