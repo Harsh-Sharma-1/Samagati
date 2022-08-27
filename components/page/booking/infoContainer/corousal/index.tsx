@@ -7,7 +7,7 @@ const Item: React.FC<any> = () => {
     return (
         <div className={styles.itemContainer}>
             <div className={styles.item}>
-                <img src='./assets/pexels.jpg' alt='' />
+                <img src='../assets/pexels.jpg' alt='' />
                 <div>
                     <p>
                         <mark>
@@ -29,9 +29,12 @@ const Corousal: React.FC<any> = () => {
         centerMode: false,
         dots: false,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        // autoplay: true,
+        // speed: 5000,
+        // autoplaySpeed: 5000,
+        // cssEase: 'linear',
     };
     return (
         <div className={styles.container}>

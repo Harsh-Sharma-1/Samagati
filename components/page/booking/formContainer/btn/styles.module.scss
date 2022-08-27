@@ -9,4 +9,10 @@
     transition: 0.3s ease-in;
     color: #173b82;
     font-weight: 700;
+    border: 0px;
+    background-color: white;
+
+    &:focus {
+        outline: 0px;
+    }
 }

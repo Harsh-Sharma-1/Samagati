@@ -1,4 +1,4 @@
-.textareabox {
+.container {
     width: 100%;
     height: 170px;
     padding: 30px;
@@ -7,21 +7,20 @@
     box-shadow: inset 10px 10px 10px #cbced19e, inset -6px -6px 6px white;
     border: none;
     resize: none;
-    font-family: 'Lato';
     font-size: 16px;
+    font-family: 'Lato';
     color: #173b82;
-}
 
-.textareabox::placeholder {
-    color: #173b8286;
-}
+    &::placeholder {
+        color: #173b8286;
+        font-family: 'Lato';
+    }
 
-.textareabox:focus {
-    outline: none;
-}
+    &:focus {
+        outline: none;
+    }
 
-@media only screen and (max-width: 850px) {
-    .textareabox {
+    @media only screen and (max-width: 850px) {
         width: 90%;
     }
 }

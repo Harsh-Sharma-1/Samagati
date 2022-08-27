@@ -1,7 +1,11 @@
 .container {
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 60px;
+    margin-bottom: 60px;
+
+    &:last-child {
+        margin-bottom: 150px;
+    }
 
     h1,
     p {

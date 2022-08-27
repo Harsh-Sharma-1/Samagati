@@ -7,7 +7,15 @@
 
 .itemContainer {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
+    max-height: 380px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    scroll-snap-type: y mandatory;
+
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
 }
 
 .item {
@@ -19,6 +27,8 @@
     cursor: pointer;
     overflow: hidden;
     position: relative;
+    margin-bottom: 20px;
+    scroll-snap-align: start;
 
     img {
         width: 100%;

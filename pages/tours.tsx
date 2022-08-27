@@ -1,10 +1,14 @@
+import axios from 'axios';
 import React from 'react';
-import Corousal from '../components/page/tours/corousal';
 import Info from '../components/page/tours/info';
-import SearchBox from '../components/page/tours/searchbox';
+import PreviousTours from '../components/page/tours/previousTours';
 import UpcommingTours from '../components/page/tours/upcomingTours';
 
-const Tours = () => {
+type props = {
+    products: any;
+};
+
+const Tours: React.FC<props> = ({ products }) => {
     return (
         <div>
             <Info
@@ -25,11 +29,28 @@ const Tours = () => {
                       strators and rulers India has ever produced'
                 }
             />
-            <SearchBox />
-            <Corousal />
-            <UpcommingTours />
+            <PreviousTours />
+            <UpcommingTours data={products.data} />
         </div>
     );
 };
+
+export async function getServerSideProps(context: any) {
+    const config = {
+        headers: {
+            Authorization: `Bearer ${process.env.API_TOKEN}`,
+        },
+    };
+    const res = await axios.get(
+        'http://localhost:1337/api/tours?populate=*',
+        config
+    );
+    const products = res.data;
+    return {
+        props: {
+            products,
+        },
+    };
+}
 
 export default Tours;
